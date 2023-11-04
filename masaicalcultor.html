@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #cont{
+            border:1px solid red;
+            display: grid;
+            width: 500px;
+            height: 500px;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(5,90px);
+            margin: auto;
+            gap: 8px;
+            justify-content: center;
+            padding-top:100px;
+        }
+        #cont >div{
+            border-radius:10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .reslutBox{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+        button{
+            height:100%;
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius:10px;
+            background-color:white;
+            border:none;
+        }
+        .blackbox{
+            background-color:black ;
+
+            color: azure;
+        }
+        .redbox{
+            background-color: red;
+            color: azure;
+        }
+        h1{
+            color:hsl(180, 72%, 31%);
+            text-align: center;
+            font-size: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="cont">
+        <div class="reslutBox"></div>
+        <div><button>1</button></div>
+        <div><button>2</button></div>
+        <div><button>3</button></div>
+        <div ><button class="blackbox">+</button></div>
+        <div><button>4</button></div>
+        <div><button>5</button></div>
+        <div><button>6</button></div>
+        <div><button class="blackbox">-</button></div>
+        <div><button>7</button></div>
+        <div><button>8</button></div>
+        <div><button>9</button></div>
+        <div><button class="blackbox">x</button></div>
+        <div><button class="redbox">c</button></div>
+        <div><button>0</button></div>
+        <div><button class="blackbox">=</button></div>
+        <div><button class="blackbox">/</button></div>
+
+
+    </div>
+</body>
+</html>
